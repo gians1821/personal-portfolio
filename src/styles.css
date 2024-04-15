@@ -1,0 +1,290 @@
+:root {
+    --DarkNeutral800: rgb(159,173,188);
+    --Blue800: rgb(0,85,204);
+    --Blue800\5: rgb(0,85,204,0.5);
+    --Blue800\2: rgb(0,85,204,0.2);
+    --Blue900: rgb(9,50,108);
+    --Blue900\7: rgba(9,50,108,0.7);
+    --Blue1000: rgb(28,43,65);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    color: #F7F8F9;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #F7F8F9;
+}
+
+.projects-section,
+.contact-section,
+.welcome-section {
+    scroll-margin-top: 8rem;
+}
+
+/*
+    HEADER STYLES
+*/
+
+.header-layout {
+    background: linear-gradient(to bottom, var(--Blue900) 55%, var(--Blue900\7) 100%);
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--DarkNeutral800);
+    z-index: 100;
+}
+
+.navbar {
+    margin-left: 3.2rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.navbar__ads-button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+}
+
+/*
+    MAIN STYLES
+*/
+
+.main-layout {
+    background: linear-gradient(35deg, var(--Blue1000), var(--Blue900), var(--Blue800));
+}
+
+.welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-card {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0rem 3.2rem;
+}
+
+.presentation-card__name {
+    /* 
+        ADS: 
+        Text size h900 
+    */
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 4rem;
+}
+
+.presentation-card__role {
+    /*
+        ADS:
+        Text size h700
+    */
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 2.8rem;
+}
+
+.projects-section {
+    padding: 0rem 3.2rem;
+}
+
+.projects-section__title {
+    /*
+        ADS:
+        Text size h600
+    */
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.08em;
+    line-height: 2.4rem;
+}
+
+.projects-container {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.project-tile {
+    background: var(--Blue800\2);
+    padding: 1.6rem 2rem;
+    border-radius: 4px;
+}
+
+.project-tile__title {
+    /*
+        ADS:
+        Text size h500
+    */
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.006em;
+    line-height: 2rem;
+}
+
+.project-tile__image {
+    margin: 1.2rem 0;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 6px 0 black;
+}
+
+.project-tile__description {
+    line-height: 2rem;
+}
+
+.project-tile__link {
+    position: relative;
+    right: 0;
+    background: linear-gradient(to top right, var(--Blue800), var(--Blue800\2));
+    padding: 0.8rem 1.2rem;
+    width: max-content;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-top: 1.2rem;
+    z-index: 0;
+}
+
+.contact-section {
+    padding: 0rem 3.2rem;
+}
+
+.contact-section__title {
+    /*
+        ADS:
+        Text size h600
+    */
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.08em;
+    line-height: 2.4rem;
+
+    margin-top: 3.2rem;
+}
+
+.contact-section__call-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.call-section__title {
+    /*
+        ADS:
+        Text size h700
+    */
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 2.8rem;
+}
+
+.call-section__subtitle {
+    /*
+        ADS:
+        Text size h400
+    */
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    line-height: 1.6rem;
+
+    margin-top: 0.2rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.links-container__link {
+    display: block;
+    width: max-content;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+}
+
+/*
+    FOOTER STYLES
+*/
+
+.footer-layout {
+    background-color: var(--Blue900);
+    height: 2.4rem;
+}
+
+@media (min-width: 640px) {
+
+    .navbar {
+        width: 60%;
+        margin: auto;
+    }
+
+    .projects-section {
+        width: 60%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .contact-section {
+        width: 60%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .navbar__ads-button:hover {
+        background-color: var(--Blue1000);
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (min-width: 1300px) {
+
+    .navbar {
+        width: 50%;
+    }
+
+    .projects-section {
+        width: 50%;
+    }
+
+    .contact-section {
+        width: 50%;
+    }
+
+}
