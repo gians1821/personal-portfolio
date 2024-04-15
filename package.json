@@ -1,0 +1,16 @@
+{
+  "homepage": "https://gians1821.github.io/personal-portfolio",
+  "name": "personal-portfolio-old",
+  "version": "1.0.0",
+  "description": "My [portfolio](https://gians1821.github.io/personal-portfolio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
